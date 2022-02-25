@@ -1,0 +1,3 @@
+Ivan,Petrov,Notebook, 200
+Ivan,Petrov,Mouse,25
+Petr,Ivanov,Computer,329
