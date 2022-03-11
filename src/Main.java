@@ -1,6 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // есть счетчик который считает до 1000 , задача в одном потоке его увеличивать,
+        // в другом уменьшать.
     }
 }
