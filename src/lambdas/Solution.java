@@ -82,6 +82,12 @@ public class Solution {
         //////    ненную строку
 
 
+
+
+
+
+
+
         /**
          * Есть класс Address c полями улица и номер дома и класс Person  с полями имя, возраст
          * и address. Написать метод, возвращающий адреса людей старше 17 лет
@@ -89,6 +95,16 @@ public class Solution {
 
 
 
+    }
+
+    public String transforming(String input, Predicate<String>predicate,Function<String,String>function){
+        String[] words = input.split(" ");
+        for(int i=0;i<words.length;i++){
+            if(predicate.test(words[i])){
+                words[i]=function.apply(words[i]);
+            }
+        }
+        return String.join(" ",words);
     }
   /*  public List<Address>addressOlder17(List<PersonOlder17> input)
         return input
